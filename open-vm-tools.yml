@@ -1,0 +1,12 @@
+open-vm-tools:
+  volumes_from:
+    - all-volumes
+  labels:
+    io.rancher.os.scope: system
+    io.rancher.os.after: cloud-init
+  image: udntv/open-vm-tools
+  container_name: open-vm-tools
+  privileged: true
+  pid: host
+  network: host
+  name: open-vm-tools
