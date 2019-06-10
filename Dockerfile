@@ -1,4 +1,4 @@
-FROM ubuntu:14.04.3
+FROM ubuntu
 
 RUN apt-get update && \
     apt-get install -y open-vm-tools && \
